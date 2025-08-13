@@ -24,6 +24,31 @@
           "words": ["DIAMOND", "FLAT", "BOX", "CHRISTMAS TREE"]
         }
       ]
+    },
+    {
+      "id": 2,
+      "groups": [
+        {
+          "level": "easy",
+          "connection": "TYPES OF FRUIT",
+          "words": ["APPLE", "BANANA", "ORANGE", "GRAPE"]
+        },
+        {
+          "level": "medium",
+          "connection": "COLORS",
+          "words": ["RED", "BLUE", "GREEN", "YELLOW"]
+        },
+        {
+          "level": "hard",
+          "connection": "PLANETS",
+          "words": ["MERCURY", "VENUS", "EARTH", "MARS"]
+        },
+        {
+          "level": "tricky",
+          "connection": "CODING LANGUAGES",
+          "words": ["PYTHON", "JAVASCRIPT", "JAVA", "RUST"]
+        }
+      ]
     }
   ]
 }
