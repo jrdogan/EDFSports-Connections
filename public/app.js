@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('/data/games.json')
         .then(response => response.json())
         .then(data => {
-            game = data.games[0];
+            const params = new URLSearchParams(window.location.search);
+            const gameId = parseInt(params.get('id'), 10);
+            game = data.games.find(g => g.id === gameId) || data.games[0];
             words = game.groups.flatMap(group => group.words);
             shuffle(words);
             populateBoard();
