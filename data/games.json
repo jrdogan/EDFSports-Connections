@@ -24,6 +24,31 @@
           "words": ["Marvin Harrison Jr.", "Chris Olave", "Jaxon Smith-Njigba", "Terry McLaurin"]
         }
       ]
+    },
+    {
+      "id": "2025-08-15",
+      "groups": [
+        {
+          "level": "easy",
+          "connection": "Areas of a Pickleball Court",
+          "words": ["Kitchen", "Net", "Baseline", "Sideline"]
+        },
+        {
+          "level": "medium",
+          "connection": "Synonyms for Disabling",
+          "words": ["Deactivate", "Kill", "Dismantle", "Halt"]
+        },
+        {
+          "level": "hard",
+          "connection": "Sandra Bullock Movies",
+          "words": ["Speed", "Gravity", "Proposal", "Crash"]
+        },
+        {
+          "level": "tricky",
+          "connection": "____ Case",
+          "words": ["Basket", "Test", "Cold", "Edge"]
+        }
+      ]
     }
   ]
 }
