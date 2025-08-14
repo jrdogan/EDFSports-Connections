@@ -14,7 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             const params = new URLSearchParams(window.location.search);
-            const gameId = parseInt(params.get('id'), 10);
+            let gameId = params.get('id');
+
+            if (!gameId) {
+                const today = new Date();
+                const yyyy = today.getFullYear();
+                const mm = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+                const dd = String(today.getDate()).padStart(2, '0');
+                gameId = `${yyyy}-${mm}-${dd}`;
+            }
+
             game = data.games.find(g => g.id === gameId) || data.games[0];
             words = game.groups.flatMap(group => group.words);
             shuffle(words);
