@@ -1,27 +1,52 @@
 {
   "games": [
     {
-      "id": 1,
+      "id": "2025-08-14",
       "groups": [
         {
           "level": "easy",
-          "connection": "Jersey No. 13",
-          "words": ["Mike Evans", "Brock Purdy", "Keenan Allen", "OBJ"]
+          "connection": "BASEBALL ACTIONS",
+          "words": ["SWING", "PITCH", "CATCH", "THROW"]
         },
         {
           "level": "medium",
-          "connection": "Alabama Alumns",
-          "words": ["Jaylen Waddle", "Jahmyr Gibbs", "Jerry Jeudy", "Derrick Henry"]
+          "connection": "FOOTBALL POSITIONS",
+          "words": ["QUARTERBACK", "RECEIVER", "CENTER", "GUARD"]
         },
         {
           "level": "hard",
-          "connection": "Georgia Alumns",
-          "words": ["D'Andre Swift", "George Pickens", "Ladd McConkey", "Brock Bowers"]
+          "connection": "BASKETBALL TEAMS",
+          "words": ["LAKERS", "CELTICS", "BULLS", "WARRIORS"]
         },
         {
           "level": "tricky",
-          "connection": "OSU Alumns",
-          "words": ["Marvin Harrison Jr.", "Chris Olave", "Jaxon Smith-Njigba", "Terry McLaurin"]
+          "connection": "SOCCER FORMATIONS",
+          "words": ["DIAMOND", "FLAT", "BOX", "CHRISTMAS TREE"]
+        }
+      ]
+    },
+    {
+      "id": "2025-08-15",
+      "groups": [
+        {
+          "level": "easy",
+          "connection": "TYPES OF FRUIT",
+          "words": ["APPLE", "BANANA", "ORANGE", "GRAPE"]
+        },
+        {
+          "level": "medium",
+          "connection": "COLORS",
+          "words": ["RED", "BLUE", "GREEN", "YELLOW"]
+        },
+        {
+          "level": "hard",
+          "connection": "PLANETS",
+          "words": ["MERCURY", "VENUS", "EARTH", "MARS"]
+        },
+        {
+          "level": "tricky",
+          "connection": "CODING LANGUAGES",
+          "words": ["PYTHON", "JAVASCRIPT", "JAVA", "RUST"]
         }
       ]
     }
