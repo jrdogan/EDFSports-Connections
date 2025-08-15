@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lives = 4;
     let solvedGroups = 0;
 
-    fetch('../data/games.json')
+    fetch('../data/games.json?v=${Date.now()}')
         .then(response => response.json())
         .then(data => {
             const params = new URLSearchParams(window.location.search);
