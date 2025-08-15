@@ -119,6 +119,15 @@ document.addEventListener('DOMContentLoaded', () => {
         lives--;
         updateLives();
 
+        // Calculate how many are correct
+        let maxCorrect = 0;
+        game.groups.forEach(group => {
+            const correctInGroup = selectedWords.filter(word => group.words.includes(word)).length;
+            if (correctInGroup > maxCorrect) {
+                maxCorrect = correctInGroup;
+            }
+        });
+
         const selectedTiles = Array.from(gameBoard.children).filter(tile => tile.classList.contains('selected'));
         selectedTiles.forEach(tile => {
             tile.classList.add('shake');
@@ -132,6 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (lives === 0) {
             setTimeout(() => alert('You lose!'), 100);
+        } else {
+            setTimeout(() => alert(message), 100);
         }
     }
 
