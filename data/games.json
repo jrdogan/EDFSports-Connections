@@ -1,52 +1,27 @@
 {
   "games": [
     {
-      "id": "2025-08-14",
+      "id": 1,
       "groups": [
         {
           "level": "easy",
-          "connection": "Jersey No. 13",
-          "words": ["Mike Evans", "Brock Purdy", "Keenan Allen", "OBJ"]
+          "connection": "BASEBALL ACTIONS",
+          "words": ["SWING", "PITCH", "CATCH", "THROW"]
         },
         {
           "level": "medium",
-          "connection": "Alabama Alumns",
-          "words": ["Jaylen Waddle", "Jahmyr Gibbs", "Jerry Jeudy", "Derrick Henry"]
+          "connection": "FOOTBALL POSITIONS",
+          "words": ["QUARTERBACK", "RECEIVER", "CENTER", "GUARD"]
         },
         {
           "level": "hard",
-          "connection": "Georgia Alumns",
-          "words": ["D'Andre Swift", "George Pickens", "Ladd McConkey", "Brock Bowers"]
+          "connection": "BASKETBALL TEAMS",
+          "words": ["LAKERS", "CELTICS", "BULLS", "WARRIORS"]
         },
         {
           "level": "tricky",
-          "connection": "OSU Alumns",
-          "words": ["Marvin Harrison Jr.", "Chris Olave", "Jaxon Smith-Njigba", "Terry McLaurin"]
-        }
-      ]
-    },
-    {
-      "id": "2025-08-15",
-      "groups": [
-        {
-          "level": "easy",
-          "connection": "Areas of a Pickleball Court",
-          "words": ["Kitchen", "Net", "Baseline", "Sideline"]
-        },
-        {
-          "level": "medium",
-          "connection": "Synonyms for Disabling",
-          "words": ["Deactivate", "Kill", "Dismantle", "Halt"]
-        },
-        {
-          "level": "hard",
-          "connection": "Sandra Bullock Movies",
-          "words": ["Speed", "Gravity", "Proposal", "Crash"]
-        },
-        {
-          "level": "tricky",
-          "connection": "____ Case",
-          "words": ["Basket", "Test", "Cold", "Edge"]
+          "connection": "SOCCER FORMATIONS",
+          "words": ["DIAMOND", "FLAT", "BOX", "CHRISTMAS TREE"]
         }
       ]
     }

@@ -10,21 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let lives = 4;
     let solvedGroups = 0;
 
-    fetch('/EDFSports-Connections/data/games.json')
+    fetch('/data/games.json')
         .then(response => response.json())
         .then(data => {
-            const params = new URLSearchParams(window.location.search);
-            let gameId = params.get('id');
-
-            if (!gameId) {
-                const today = new Date();
-                const yyyy = today.getFullYear();
-                const mm = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
-                const dd = String(today.getDate()).padStart(2, '0');
-                gameId = `${yyyy}-${mm}-${dd}`;
-            }
-
-            game = data.games.find(g => g.id === gameId) || data.games[0];
+            game = data.games[0];
             words = game.groups.flatMap(group => group.words);
             shuffle(words);
             populateBoard();
@@ -119,6 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
         lives--;
         updateLives();
 
+        // Calculate how many are correct
+        let maxCorrect = 0;
+        game.groups.forEach(group => {
+            const correctInGroup = selectedWords.filter(word => group.words.includes(word)).length;
+            if (correctInGroup > maxCorrect) {
+                maxCorrect = correctInGroup;
+            }
+        });
+
+        const message = `Incorrect. You had ${maxCorrect} correct.`;
+
         const selectedTiles = Array.from(gameBoard.children).filter(tile => tile.classList.contains('selected'));
         selectedTiles.forEach(tile => {
             tile.classList.add('shake');
@@ -132,6 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (lives === 0) {
             setTimeout(() => alert('You lose!'), 100);
+        } else {
+            setTimeout(() => alert(message), 100);
         }
     }
 
