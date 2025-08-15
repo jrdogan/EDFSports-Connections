@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lives = 4;
     let solvedGroups = 0;
 
-    fetch('/EDFSports-Connections/data/games.json')
+    fetch('../data/games.json')
         .then(response => response.json())
         .then(data => {
             const params = new URLSearchParams(window.location.search);
@@ -127,6 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 maxCorrect = correctInGroup;
             }
         });
+
+        const message = `Incorrect. You have ${maxCorrect} correct.`;
 
         const selectedTiles = Array.from(gameBoard.children).filter(tile => tile.classList.contains('selected'));
         selectedTiles.forEach(tile => {
