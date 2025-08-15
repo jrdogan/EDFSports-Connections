@@ -49,6 +49,31 @@
           "words": ["Basket", "Test", "Cold", "Edge"]
         }
       ]
+    },
+    {
+      "id": "2025-08-16",
+      "groups": [
+        {
+          "level": "easy",
+          "connection": "80s TV Shows",
+          "words": ["Cheers", "Dynasty", "Coach", "Hunter"]
+        },
+        {
+          "level": "medium",
+          "connection": "Verb Forms of NFL Team Names",
+          "words": ["Charge", "Raid", "Command", "Pack"]
+        },
+        {
+          "level": "hard",
+          "connection": "Thomas Aquinas's Four Idols",
+          "words": ["Fame", "Power", "Money", "Pleasure"]
+        },
+        {
+          "level": "tricky",
+          "connection": "Sun ____",
+          "words": ["Block", "Screen", "Flower", "Spot"]
+        }
+      ]
     }
   ]
 }
